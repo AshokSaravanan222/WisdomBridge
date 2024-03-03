@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json", // Extend your base config
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js", // Include all TS, TSX, and JS files
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts", // Include any additional type definitions
+    // Explicitly include config files and any other files not included by your base tsconfig
+    ".eslintrc.js",
+    "babel.config.js",
+    "jest.config.js",
+    "tailwind.config.js"
+  ]
+}
